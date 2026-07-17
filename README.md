@@ -386,3 +386,350 @@ Status : Learning Never Stops 🚀
 </div>
 
 ---
+<!-- ========================================================= -->
+<!--                  FEATURED PROJECTS                        -->
+<!-- ========================================================= -->
+
+<div align="center">
+
+# 🚀 Featured AI Projects
+
+### *Building Intelligent Systems for Real-World Applications*
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=2500&pause=1000&color=00FF88&center=true&vCenter=true&width=650&lines=Artificial+Intelligence;Machine+Learning;Generative+AI;Data+Analytics;Computer+Vision;Open+Source"/>
+
+</div>
+
+---
+
+# 🌍 Nova Sphere
+
+> **AI-Powered Disaster Management Platform**
+
+<img src="./assets/projects/nova-sphere.png" width="100%"/>
+
+### 📌 Overview
+
+Nova Sphere is an AI-driven disaster management platform designed to improve emergency preparedness through predictive analytics, real-time monitoring, and intelligent decision support.
+
+### ✨ Key Features
+
+- 📍 Disaster Risk Prediction
+- 📊 Interactive Analytics Dashboard
+- 🚨 Early Warning & Alerts
+- 🌍 Resource Allocation Support
+- ☁️ Cloud-Ready Architecture
+
+### 🛠 Tech Stack
+
+`Python` `Scikit-Learn` `Pandas` `SQL` `React` `Power BI` `AWS`
+
+---
+
+# 🤖 Sonar AI
+
+> **Generative AI Assistant**
+
+<img src="./assets/projects/sonar-ai.png" width="100%"/>
+
+### 📌 Overview
+
+A conversational AI assistant that leverages Large Language Models to provide context-aware responses and semantic search capabilities.
+
+### ✨ Key Features
+
+- 💬 Intelligent Conversations
+- 🧠 Prompt Engineering
+- 🔍 Semantic Search
+- 📚 Retrieval-Augmented Generation (RAG)
+- ⚡ Fast Response Pipeline
+
+### 🛠 Tech Stack
+
+`Python` `LangChain` `OpenAI API` `Vector Database` `NLP`
+
+---
+
+# 📚 Smart Learning Management System
+
+> **AI-Based Learning Platform**
+
+<img src="./assets/projects/lms.png" width="100%"/>
+
+### 📌 Overview
+
+A smart education platform that personalizes learning experiences using AI-powered recommendations and student performance analytics.
+
+### ✨ Key Features
+
+- 📈 Student Performance Dashboard
+- 🎯 Personalized Learning
+- 🤖 Academic AI Assistant
+- 📊 Learning Analytics
+
+### 🛠 Tech Stack
+
+`Python` `Machine Learning` `React` `SQL`
+
+---
+
+# 🌐 Multilingual Translation Assistant
+
+> **NLP-Based Language Translation System**
+
+<img src="./assets/projects/translation.png" width="100%"/>
+
+### ✨ Features
+
+- 🌍 Multi-language Support
+- 🎤 Speech-to-Text
+- 🔊 Text-to-Speech
+- 🔍 Language Detection
+- 🧠 Context-Aware Translation
+
+### 🛠 Tech Stack
+
+`Python` `NLP` `SpeechRecognition` `Translation APIs`
+
+---
+
+# 📈 Retail Sales Analytics
+
+> **Business Intelligence & Sales Forecasting**
+
+<img src="./assets/projects/retail.png" width="100%"/>
+
+### 📌 Highlights
+
+- 📊 Exploratory Data Analysis
+- 📈 Sales Forecasting
+- 📉 Business Insights
+- 📋 Interactive Dashboards
+
+### 🛠 Tech Stack
+
+`Python` `Pandas` `Scikit-Learn` `Power BI`
+
+---
+
+# 🚗 Vehicle Detection System
+
+> **Computer Vision using Deep Learning**
+
+<img src="./assets/projects/vehicle.png" width="100%"/>
+
+### 📌 Features
+
+- 🚘 Vehicle Detection
+- 🎯 CNN-Based Model
+- 📷 Image Processing
+- ⚡ Real-Time Prediction
+
+### 🛠 Tech Stack
+
+`TensorFlow` `OpenCV` `Python` `CNN`
+
+---
+
+# 📊 Project Summary
+
+| Project | Domain | Status |
+|----------|--------|--------|
+| 🌍 Nova Sphere | AI + Analytics | ✅ Completed |
+| 🤖 Sonar AI | Generative AI | ✅ Completed |
+| 📚 Smart LMS | AI in Education | ✅ Completed |
+| 🌐 Translation Assistant | NLP | ✅ Completed |
+| 📈 Retail Analytics | Data Analytics | ✅ Completed |
+| 🚗 Vehicle Detection | Computer Vision | ✅ Completed |
+
+---
+
+<div align="center">
+
+## 💡 *"Every project is an opportunity to learn, innovate, and solve real-world problems through Artificial Intelligence."*
+
+</div>
+
+---
+<!-- ========================================================= -->
+<!--              GITHUB DASHBOARD & ACHIEVEMENTS              -->
+<!-- ========================================================= -->
+
+<div align="center">
+
+# 📊 GitHub Analytics Dashboard
+
+<img height="170em" src="https://github-readme-stats.vercel.app/api?username=abhirajsingh524&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true"/>
+
+<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhirajsingh524&layout=compact&theme=chartreuse-dark&hide_border=true"/>
+
+</div>
+
+---
+
+<div align="center">
+
+## 🔥 Contribution Streak
+
+<img src="https://streak-stats.demolab.com?user=abhirajsingh524&theme=chartreuse-dark&hide_border=true"/>
+
+</div>
+
+---
+
+<div align="center">
+
+## 🏆 GitHub Trophies
+
+<img src="https://github-profile-trophy.vercel.app/?username=abhirajsingh524&theme=matrix&column=4&margin-w=15&margin-h=15&no-frame=true"/>
+
+</div>
+
+---
+
+<div align="center">
+
+## 📈 Contribution Graph
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=abhirajsingh524&theme=github-compact&hide_border=true"/>
+
+</div>
+
+---
+
+<div align="center">
+
+## 🐍 Contribution Snake
+
+> *(This will work after adding the GitHub Action in Part 5.)*
+
+<img src="https://raw.githubusercontent.com/abhirajsingh524/abhirajsingh524/output/github-contribution-grid-snake-dark.svg"/>
+
+</div>
+
+---
+
+# 🏅 Certifications
+
+| Certification | Status |
+|---------------|--------|
+| Microsoft AI / ML | ✅ |
+| IBM Python | ✅ |
+| AWS Educate | ✅ |
+| AICTE Internship | ✅ |
+| IEEE / Technical Learning | ✅ |
+
+> *Add the exact certificate names and links later.*
+
+---
+
+# 🏆 Achievements
+
+- 🧠 Built multiple AI/ML projects covering NLP, Computer Vision, Analytics, and Generative AI.
+- 🚀 Developed end-to-end applications using Python, Machine Learning, and modern AI frameworks.
+- 📊 Strong interest in solving real-world problems through data-driven solutions.
+- 🌱 Continuously learning advanced AI concepts such as LLMs, RAG, AI Agents, and MLOps.
+
+---
+
+# 🎓 Education
+
+```text
+Bachelor of Technology (B.Tech)
+Artificial Intelligence
+
+Invertis University
+2023 – 2027
+
+Focus Areas
+• Machine Learning
+• Deep Learning
+• Data Analytics
+• Generative AI
+```
+
+---
+
+# 🎯 Currently Learning
+
+```text
+██████████████████████████████
+
+✔ Large Language Models (LLMs)
+
+✔ Retrieval-Augmented Generation (RAG)
+
+✔ AI Agents
+
+✔ MLOps
+
+✔ Cloud AI
+
+✔ Advanced Deep Learning
+
+██████████████████████████████
+```
+
+---
+
+# 📅 2026 Goals
+
+- 🚀 Build production-ready AI applications
+- 🌍 Contribute to open-source AI projects
+- 📖 Publish technical blogs
+- ☁️ Strengthen cloud deployment skills
+- 💼 Secure an AI/ML internship or full-time opportunity
+
+---
+
+# 🌐 Connect With Me
+
+<div align="center">
+
+<a href="https://github.com/abhirajsingh524">
+<img src="https://skillicons.dev/icons?i=github"/>
+</a>
+
+<a href="https://www.linkedin.com/">
+<img src="https://skillicons.dev/icons?i=linkedin"/>
+</a>
+
+<a href="mailto:your-email@example.com">
+<img src="https://skillicons.dev/icons?i=gmail"/>
+</a>
+
+</div>
+
+> Replace the LinkedIn profile URL and email address with your own.
+
+---
+
+<div align="center">
+
+## 💻 Hacker Terminal
+
+```bash
+root@arpit:~$
+
+$ git status
+
+On branch main
+
+Portfolio Status : ACTIVE
+
+AI Projects : READY
+
+Learning : NEVER STOPS
+
+Next Goal : Build AI that creates real-world impact.
+
+System Exit...
+
+Connection Closed.
+
+Thanks for visiting! 🚀
+```
+
+</div>
+
+---

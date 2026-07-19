@@ -4,13 +4,25 @@
 
 <p align="center">
 
-<img src="assets/banner/banner.svg" width="100%">
+<img src="assets/banner/banner.png" width="100%">
 
 </p>
 
 <p align="center">
 
-<img src="assets/boot/boot.svg" width="100%">
+<img width="100%"src="./assets/boot/boot.svg">
+
+</p>
+
+<p align="center">
+
+<img width="100%"src="./assets/boot/loading.svg">
+
+</p>
+
+<p align="center">
+
+<img width="100%"src="./assets/boot/terminal.svg">
 
 </p>
 

@@ -1,125 +1,168 @@
-<svg width="1200" height="520"
-xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="580" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow-green">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-cyan">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0a0e13;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="bar-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF88;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#00D9FF;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="scan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF88;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#00FF88;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#00FF88;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
 
-<rect width="100%" height="100%" fill="#0D1117"/>
+  <!-- Background -->
+  <rect width="1200" height="580" fill="url(#bg-grad)"/>
 
-<text
-x="60"
-y="70"
-fill="#00FF88"
-font-size="34"
-font-family="monospace">
+  <!-- Grid lines horizontal -->
+  <line x1="0" y1="100" x2="1200" y2="100" stroke="#00FF88" stroke-width="0.3" opacity="0.15"/>
+  <line x1="0" y1="200" x2="1200" y2="200" stroke="#00FF88" stroke-width="0.3" opacity="0.15"/>
+  <line x1="0" y1="300" x2="1200" y2="300" stroke="#00FF88" stroke-width="0.3" opacity="0.15"/>
+  <line x1="0" y1="400" x2="1200" y2="400" stroke="#00FF88" stroke-width="0.3" opacity="0.15"/>
+  <line x1="0" y1="500" x2="1200" y2="500" stroke="#00FF88" stroke-width="0.3" opacity="0.15"/>
 
-AI OPERATING SYSTEM v4.0
+  <!-- Grid lines vertical -->
+  <line x1="200" y1="0" x2="200" y2="580" stroke="#00FF88" stroke-width="0.3" opacity="0.1"/>
+  <line x1="400" y1="0" x2="400" y2="580" stroke="#00FF88" stroke-width="0.3" opacity="0.1"/>
+  <line x1="600" y1="0" x2="600" y2="580" stroke="#00FF88" stroke-width="0.3" opacity="0.1"/>
+  <line x1="800" y1="0" x2="800" y2="580" stroke="#00FF88" stroke-width="0.3" opacity="0.1"/>
+  <line x1="1000" y1="0" x2="1000" y2="580" stroke="#00FF88" stroke-width="0.3" opacity="0.1"/>
 
-</text>
+  <!-- Top border line with glow -->
+  <line x1="0" y1="2" x2="1200" y2="2" stroke="#00FF88" stroke-width="2" filter="url(#glow-green)"/>
+  <!-- Bottom border -->
+  <line x1="0" y1="578" x2="1200" y2="578" stroke="#00D9FF" stroke-width="2" filter="url(#glow-cyan)"/>
 
-<text
-x="60"
-y="130"
-fill="#00FF88"
-font-size="20"
-font-family="monospace">
+  <!-- Corner brackets TL -->
+  <polyline points="40,20 20,20 20,50" fill="none" stroke="#00FF88" stroke-width="2.5" filter="url(#glow-green)"/>
+  <!-- Corner brackets TR -->
+  <polyline points="1160,20 1180,20 1180,50" fill="none" stroke="#00FF88" stroke-width="2.5" filter="url(#glow-green)"/>
+  <!-- Corner brackets BL -->
+  <polyline points="40,560 20,560 20,530" fill="none" stroke="#00D9FF" stroke-width="2.5" filter="url(#glow-cyan)"/>
+  <!-- Corner brackets BR -->
+  <polyline points="1160,560 1180,560 1180,530" fill="none" stroke="#00D9FF" stroke-width="2.5" filter="url(#glow-cyan)"/>
 
-Initializing Neural Core...
+  <!-- Scan line animation -->
+  <rect x="0" y="0" width="1200" height="40" fill="url(#scan-grad)" opacity="0.4">
+    <animateTransform attributeName="transform" type="translate" values="0,0;0,580;0,0" dur="4s" repeatCount="indefinite"/>
+  </rect>
 
-</text>
+  <!-- Header section -->
+  <text x="60" y="55" fill="#00FF88" font-size="11" font-family="monospace" letter-spacing="4" opacity="0.7">[ SYSTEM INIT SEQUENCE v4.0 ]</text>
+  <text x="1100" y="55" fill="#00D9FF" font-size="11" font-family="monospace" letter-spacing="2" text-anchor="end" opacity="0.7">NODE: ARPIT-AI-OS</text>
 
-<text
-x="60"
-y="170"
-fill="#00FF88"
-font-size="20"
-font-family="monospace">
+  <!-- Main title -->
+  <text x="60" y="110" fill="#00FF88" font-size="42" font-family="monospace" font-weight="bold" letter-spacing="6" filter="url(#glow-green)">AI OPERATING SYSTEM</text>
+  <text x="63" y="110" fill="#00FF88" font-size="42" font-family="monospace" font-weight="bold" letter-spacing="6" opacity="0.3">AI OPERATING SYSTEM</text>
 
-Loading Machine Learning Module...
+  <!-- Subtitle -->
+  <text x="62" y="142" fill="#00D9FF" font-size="16" font-family="monospace" letter-spacing="3" filter="url(#glow-cyan)">NEURAL ENGINE CORE — MACHINE INTELLIGENCE FRAMEWORK</text>
 
-</text>
+  <!-- Divider -->
+  <line x1="60" y1="162" x2="900" y2="162" stroke="#00FF88" stroke-width="1" opacity="0.5"/>
+  <circle cx="900" cy="162" r="3" fill="#00FF88" opacity="0.8"/>
 
-<text
-x="60"
-y="210"
-fill="#00FF88"
-font-size="20"
-font-family="monospace">
+  <!-- Boot log entries with staggered fade-in -->
+  <g font-family="monospace" font-size="15">
+    <!-- Line 1 -->
+    <text x="60" y="195" fill="#00FF88" opacity="0">[ OK ] Initializing Neural Core Engine...
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.2s" fill="freeze"/>
+    </text>
+    <text x="900" y="195" fill="#00FF88" font-size="13" text-anchor="end" opacity="0">DONE
+      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="0.5s" fill="freeze"/>
+    </text>
 
-Loading Deep Learning Module...
+    <!-- Line 2 -->
+    <text x="60" y="222" fill="#00D9FF" opacity="0">[ OK ] Loading Machine Learning Modules...
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="0.6s" fill="freeze"/>
+    </text>
+    <text x="900" y="222" fill="#00D9FF" font-size="13" text-anchor="end" opacity="0">DONE
+      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="0.9s" fill="freeze"/>
+    </text>
 
-</text>
+    <!-- Line 3 -->
+    <text x="60" y="249" fill="#00FF88" opacity="0">[ OK ] Activating Deep Learning Subsystem...
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.0s" fill="freeze"/>
+    </text>
+    <text x="900" y="249" fill="#00FF88" font-size="13" text-anchor="end" opacity="0">DONE
+      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="1.3s" fill="freeze"/>
+    </text>
 
-<text
-x="60"
-y="250"
-fill="#00FF88"
-font-size="20"
-font-family="monospace">
+    <!-- Line 4 -->
+    <text x="60" y="276" fill="#00D9FF" opacity="0">[ OK ] Mounting NLP Engine and LLM Interface...
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.4s" fill="freeze"/>
+    </text>
+    <text x="900" y="276" fill="#00D9FF" font-size="13" text-anchor="end" opacity="0">DONE
+      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="1.7s" fill="freeze"/>
+    </text>
 
-Loading NLP Engine...
+    <!-- Line 5 -->
+    <text x="60" y="303" fill="#00FF88" opacity="0">[ OK ] Calibrating Computer Vision Pipeline...
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="1.8s" fill="freeze"/>
+    </text>
+    <text x="900" y="303" fill="#00FF88" font-size="13" text-anchor="end" opacity="0">DONE
+      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="2.1s" fill="freeze"/>
+    </text>
 
-</text>
+    <!-- Line 6 -->
+    <text x="60" y="330" fill="#00D9FF" opacity="0">[ OK ] Syncing GitHub Intelligence Repository...
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.2s" fill="freeze"/>
+    </text>
+    <text x="900" y="330" fill="#00D9FF" font-size="13" text-anchor="end" opacity="0">DONE
+      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="2.5s" fill="freeze"/>
+    </text>
 
-<text
-x="60"
-y="290"
-fill="#00FF88"
-font-size="20"
-font-family="monospace">
+    <!-- Line 7 -->
+    <text x="60" y="357" fill="#7CFC00" opacity="0">[ OK ] Engaging Generative AI Core...
+      <animate attributeName="opacity" values="0;1" dur="0.3s" begin="2.6s" fill="freeze"/>
+    </text>
+    <text x="900" y="357" fill="#7CFC00" font-size="13" text-anchor="end" opacity="0">DONE
+      <animate attributeName="opacity" values="0;1" dur="0.2s" begin="2.9s" fill="freeze"/>
+    </text>
+  </g>
 
-Loading Computer Vision...
+  <!-- Progress bar track -->
+  <rect x="60" y="392" width="1080" height="22" rx="2" fill="#0f1318" stroke="#00FF88" stroke-width="1" opacity="0.8"/>
+  <!-- Progress bar fill animated -->
+  <rect x="60" y="392" width="0" height="22" rx="2" fill="url(#bar-grad)" opacity="0.9">
+    <animate attributeName="width" values="0;1080" dur="4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <!-- Progress shimmer -->
+  <rect x="60" y="392" width="80" height="22" rx="2" fill="white" opacity="0.08">
+    <animate attributeName="x" values="60;1060;60" dur="4s" repeatCount="indefinite"/>
+  </rect>
 
-</text>
+  <!-- Progress percent text -->
+  <text x="600" y="408" fill="#0D1117" font-size="12" font-family="monospace" font-weight="bold" text-anchor="middle">LOADING NEURAL CORE...</text>
 
-<text
-x="60"
-y="330"
-fill="#00FF88"
-font-size="20"
-font-family="monospace">
+  <!-- Status line -->
+  <text x="60" y="450" fill="#00FF88" font-size="20" font-family="monospace" font-weight="bold" letter-spacing="3" filter="url(#glow-green)" opacity="0">
+    ◉  STATUS : ONLINE  |  UPTIME : ∞  |  AI CORE : ACTIVE
+    <animate attributeName="opacity" values="0;1;0.7;1" dur="1s" begin="3.2s" fill="freeze"/>
+  </text>
 
-Connecting GitHub Intelligence...
+  <!-- Blinking cursor -->
+  <rect x="60" y="478" width="12" height="20" fill="#00FF88" opacity="0.9">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  <text x="80" y="494" fill="#00FF88" font-size="14" font-family="monospace" opacity="0.6">root@arpit-ai-os:~$_</text>
 
-</text>
-
-<rect
-x="60"
-y="390"
-width="800"
-height="26"
-fill="#1b1f23"/>
-
-<rect
-x="60"
-y="390"
-width="800"
-height="26"
-fill="#00ff88">
-
-<animate
-
-attributeName="width"
-
-values="0;800"
-
-dur="4s"
-
-repeatCount="indefinite"/>
-
-</rect>
-
-<text
-
-x="60"
-
-y="470"
-
-fill="#00ff88"
-
-font-size="28"
-
-font-family="monospace">
-
-STATUS : ONLINE
-
-</text>
-
+  <!-- Bottom info bar -->
+  <rect x="0" y="550" width="1200" height="28" fill="#00FF88" opacity="0.05"/>
+  <text x="60" y="568" fill="#00FF88" font-size="11" font-family="monospace" letter-spacing="2" opacity="0.6">AI-OS v4.0</text>
+  <text x="300" y="568" fill="#00D9FF" font-size="11" font-family="monospace" letter-spacing="2" opacity="0.6">KERNEL: NEURAL-CORE-4.2</text>
+  <text x="600" y="568" fill="#00FF88" font-size="11" font-family="monospace" letter-spacing="2" text-anchor="middle" opacity="0.6">ARPIT SINGH — AI ENGINEER</text>
+  <text x="1140" y="568" fill="#00D9FF" font-size="11" font-family="monospace" letter-spacing="2" text-anchor="end" opacity="0.6">SECURE BOOT ENABLED</text>
 </svg>

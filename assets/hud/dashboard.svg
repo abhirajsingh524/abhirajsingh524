@@ -1,35 +1,173 @@
-┌──────────────────────────────────────────────┐
+<svg width="1200" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow-g">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-c">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117"/>
+      <stop offset="100%" style="stop-color:#0b0f14"/>
+    </linearGradient>
+    <linearGradient id="gr1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF88"/>
+      <stop offset="100%" style="stop-color:#00D9FF"/>
+    </linearGradient>
+    <linearGradient id="gr2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D9FF"/>
+      <stop offset="100%" style="stop-color:#7CFC00"/>
+    </linearGradient>
+    <linearGradient id="gr3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7CFC00"/>
+      <stop offset="100%" style="stop-color:#FFD700"/>
+    </linearGradient>
+  </defs>
 
-AI CORE
+  <rect width="1200" height="500" fill="url(#bg)"/>
 
-CPU
+  <!-- Grid -->
+  <line x1="0" y1="100" x2="1200" y2="100" stroke="#00FF88" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="200" x2="1200" y2="200" stroke="#00FF88" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="300" x2="1200" y2="300" stroke="#00FF88" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="400" x2="1200" y2="400" stroke="#00FF88" stroke-width="0.3" opacity="0.1"/>
+  <line x1="300" y1="0" x2="300" y2="500" stroke="#00FF88" stroke-width="0.3" opacity="0.07"/>
+  <line x1="600" y1="0" x2="600" y2="500" stroke="#00FF88" stroke-width="0.3" opacity="0.07"/>
+  <line x1="900" y1="0" x2="900" y2="500" stroke="#00FF88" stroke-width="0.3" opacity="0.07"/>
 
-██████████████
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="498" fill="none" stroke="#00FF88" stroke-width="1.5" opacity="0.35"/>
 
-GPU
+  <!-- Corner brackets -->
+  <polyline points="40,18 18,18 18,50" fill="none" stroke="#00FF88" stroke-width="2.5" filter="url(#glow-g)"/>
+  <polyline points="1160,18 1182,18 1182,50" fill="none" stroke="#00FF88" stroke-width="2.5" filter="url(#glow-g)"/>
+  <polyline points="40,482 18,482 18,450" fill="none" stroke="#00D9FF" stroke-width="2.5" filter="url(#glow-c)"/>
+  <polyline points="1160,482 1182,482 1182,450" fill="none" stroke="#00D9FF" stroke-width="2.5" filter="url(#glow-c)"/>
 
-███████████████
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="52" fill="#00FF88" opacity="0.04"/>
+  <text x="60" y="32" fill="#00FF88" font-size="11" font-family="monospace" letter-spacing="5" filter="url(#glow-g)">[ NEURAL CORE DASHBOARD — SKILL MATRIX ONLINE ]</text>
+  <text x="1140" y="32" fill="#00D9FF" font-size="11" font-family="monospace" letter-spacing="2" text-anchor="end" opacity="0.8">MODULES: 10/10 ACTIVE</text>
 
-RAM
+  <!-- Column headers -->
+  <text x="60" y="80" fill="#00D9FF" font-size="12" font-family="monospace" letter-spacing="3" opacity="0.7">MODULE</text>
+  <text x="540" y="80" fill="#00D9FF" font-size="12" font-family="monospace" letter-spacing="3" opacity="0.7">PROFICIENCY INDEX</text>
+  <text x="920" y="80" fill="#00D9FF" font-size="12" font-family="monospace" letter-spacing="3" opacity="0.7">LEVEL</text>
+  <text x="1060" y="80" fill="#00D9FF" font-size="12" font-family="monospace" letter-spacing="3" opacity="0.7">STATUS</text>
+  <line x1="40" y1="88" x2="1160" y2="88" stroke="#00FF88" stroke-width="1" opacity="0.3"/>
 
-██████████████
+  <!-- Row data -->
+  <!-- ROW 1: Python -->
+  <rect x="40" y="96" width="1120" height="34" fill="#00FF88" opacity="0.03"/>
+  <text x="60" y="119" fill="#E6EDF3" font-size="14" font-family="monospace">🐍  Python</text>
+  <rect x="450" y="108" width="450" height="10" rx="2" fill="#0f1318"/>
+  <rect x="450" y="108" width="0" height="10" rx="2" fill="url(#gr1)">
+    <animate attributeName="width" values="0;441" dur="2s" begin="0.1s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="920" y="119" fill="#00FF88" font-size="13" font-family="monospace" font-weight="bold">98%</text>
+  <rect x="1050" y="105" width="130" height="20" rx="3" fill="#00FF88" opacity="0.12"/>
+  <text x="1115" y="119" fill="#00FF88" font-size="12" font-family="monospace" text-anchor="middle">■ ONLINE</text>
 
-ML ENGINE
+  <!-- ROW 2: Machine Learning -->
+  <text x="60" y="153" fill="#E6EDF3" font-size="14" font-family="monospace">🤖  Machine Learning</text>
+  <rect x="450" y="142" width="450" height="10" rx="2" fill="#0f1318"/>
+  <rect x="450" y="142" width="0" height="10" rx="2" fill="url(#gr1)">
+    <animate attributeName="width" values="0;428" dur="2s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="920" y="153" fill="#00FF88" font-size="13" font-family="monospace" font-weight="bold">95%</text>
+  <rect x="1050" y="139" width="130" height="20" rx="3" fill="#00FF88" opacity="0.12"/>
+  <text x="1115" y="153" fill="#00FF88" font-size="12" font-family="monospace" text-anchor="middle">■ ACTIVE</text>
 
-███████████████
+  <!-- ROW 3: Deep Learning -->
+  <rect x="40" y="164" width="1120" height="34" fill="#00FF88" opacity="0.03"/>
+  <text x="60" y="187" fill="#E6EDF3" font-size="14" font-family="monospace">🧠  Deep Learning</text>
+  <rect x="450" y="176" width="450" height="10" rx="2" fill="#0f1318"/>
+  <rect x="450" y="176" width="0" height="10" rx="2" fill="url(#gr2)">
+    <animate attributeName="width" values="0;414" dur="2s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="920" y="187" fill="#7CFC00" font-size="13" font-family="monospace" font-weight="bold">92%</text>
+  <rect x="1050" y="173" width="130" height="20" rx="3" fill="#7CFC00" opacity="0.12"/>
+  <text x="1115" y="187" fill="#7CFC00" font-size="12" font-family="monospace" text-anchor="middle">■ ACTIVE</text>
 
-LLM
+  <!-- ROW 4: Generative AI -->
+  <text x="60" y="221" fill="#E6EDF3" font-size="14" font-family="monospace">⚡  Generative AI</text>
+  <rect x="450" y="210" width="450" height="10" rx="2" fill="#0f1318"/>
+  <rect x="450" y="210" width="0" height="10" rx="2" fill="url(#gr1)">
+    <animate attributeName="width" values="0;419" dur="2s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="920" y="221" fill="#00FF88" font-size="13" font-family="monospace" font-weight="bold">93%</text>
+  <rect x="1050" y="207" width="130" height="20" rx="3" fill="#00FF88" opacity="0.12"/>
+  <text x="1115" y="221" fill="#00FF88" font-size="12" font-family="monospace" text-anchor="middle">■ ACTIVE</text>
 
-████████████████
+  <!-- ROW 5: NLP -->
+  <rect x="40" y="232" width="1120" height="34" fill="#00FF88" opacity="0.03"/>
+  <text x="60" y="255" fill="#E6EDF3" font-size="14" font-family="monospace">💬  Natural Language Processing</text>
+  <rect x="450" y="244" width="450" height="10" rx="2" fill="#0f1318"/>
+  <rect x="450" y="244" width="0" height="10" rx="2" fill="url(#gr2)">
+    <animate attributeName="width" values="0;405" dur="2s" begin="0.5s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="920" y="255" fill="#7CFC00" font-size="13" font-family="monospace" font-weight="bold">90%</text>
+  <rect x="1050" y="241" width="130" height="20" rx="3" fill="#00D9FF" opacity="0.12"/>
+  <text x="1115" y="255" fill="#00D9FF" font-size="12" font-family="monospace" text-anchor="middle">■ RUNNING</text>
 
-Cloud
+  <!-- ROW 6: Computer Vision -->
+  <text x="60" y="289" fill="#E6EDF3" font-size="14" font-family="monospace">👁  Computer Vision</text>
+  <rect x="450" y="278" width="450" height="10" rx="2" fill="#0f1318"/>
+  <rect x="450" y="278" width="0" height="10" rx="2" fill="url(#gr1)">
+    <animate attributeName="width" values="0;396" dur="2s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="920" y="289" fill="#00FF88" font-size="13" font-family="monospace" font-weight="bold">88%</text>
+  <rect x="1050" y="275" width="130" height="20" rx="3" fill="#00FF88" opacity="0.12"/>
+  <text x="1115" y="289" fill="#00FF88" font-size="12" font-family="monospace" text-anchor="middle">■ READY</text>
 
-██████████████
+  <!-- ROW 7: Data Analytics -->
+  <rect x="40" y="300" width="1120" height="34" fill="#00FF88" opacity="0.03"/>
+  <text x="60" y="323" fill="#E6EDF3" font-size="14" font-family="monospace">📊  Data Analytics</text>
+  <rect x="450" y="312" width="450" height="10" rx="2" fill="#0f1318"/>
+  <rect x="450" y="312" width="0" height="10" rx="2" fill="url(#gr3)">
+    <animate attributeName="width" values="0;410" dur="2s" begin="0.7s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="920" y="323" fill="#FFD700" font-size="13" font-family="monospace" font-weight="bold">91%</text>
+  <rect x="1050" y="309" width="130" height="20" rx="3" fill="#FFD700" opacity="0.12"/>
+  <text x="1115" y="323" fill="#FFD700" font-size="12" font-family="monospace" text-anchor="middle">■ ONLINE</text>
 
-────────────────────────────
+  <!-- ROW 8: SQL -->
+  <text x="60" y="357" fill="#E6EDF3" font-size="14" font-family="monospace">🛢  SQL / Databases</text>
+  <rect x="450" y="346" width="450" height="10" rx="2" fill="#0f1318"/>
+  <rect x="450" y="346" width="0" height="10" rx="2" fill="url(#gr2)">
+    <animate attributeName="width" values="0;405" dur="2s" begin="0.8s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="920" y="357" fill="#7CFC00" font-size="13" font-family="monospace" font-weight="bold">90%</text>
+  <rect x="1050" y="343" width="130" height="20" rx="3" fill="#00D9FF" opacity="0.12"/>
+  <text x="1115" y="357" fill="#00D9FF" font-size="12" font-family="monospace" text-anchor="middle">■ ACTIVE</text>
 
-SYSTEM ONLINE
+  <!-- ROW 9: Cloud / AWS -->
+  <rect x="40" y="368" width="1120" height="34" fill="#00FF88" opacity="0.03"/>
+  <text x="60" y="391" fill="#E6EDF3" font-size="14" font-family="monospace">☁  Cloud / AWS</text>
+  <rect x="450" y="380" width="450" height="10" rx="2" fill="#0f1318"/>
+  <rect x="450" y="380" width="0" height="10" rx="2" fill="url(#gr1)">
+    <animate attributeName="width" values="0;369" dur="2s" begin="0.9s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="920" y="391" fill="#00FF88" font-size="13" font-family="monospace" font-weight="bold">82%</text>
+  <rect x="1050" y="377" width="130" height="20" rx="3" fill="#00FF88" opacity="0.12"/>
+  <text x="1115" y="391" fill="#00FF88" font-size="12" font-family="monospace" text-anchor="middle">■ CONNECTED</text>
 
-98%
+  <!-- ROW 10: React -->
+  <text x="60" y="425" fill="#E6EDF3" font-size="14" font-family="monospace">🌐  React.js</text>
+  <rect x="450" y="414" width="450" height="10" rx="2" fill="#0f1318"/>
+  <rect x="450" y="414" width="0" height="10" rx="2" fill="url(#gr2)">
+    <animate attributeName="width" values="0;378" dur="2s" begin="1.0s" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1"/>
+  </rect>
+  <text x="920" y="425" fill="#7CFC00" font-size="13" font-family="monospace" font-weight="bold">84%</text>
+  <rect x="1050" y="411" width="130" height="20" rx="3" fill="#7CFC00" opacity="0.12"/>
+  <text x="1115" y="425" fill="#7CFC00" font-size="12" font-family="monospace" text-anchor="middle">■ ONLINE</text>
 
-└──────────────────────────────────────────────┘
+  <!-- Bottom bar -->
+  <rect x="0" y="460" width="1200" height="40" fill="#00FF88" opacity="0.04"/>
+  <line x1="40" y1="460" x2="1160" y2="460" stroke="#00FF88" stroke-width="1" opacity="0.3"/>
+  <text x="60" y="484" fill="#00FF88" font-size="11" font-family="monospace" letter-spacing="3" opacity="0.6">NEURAL CORE: 10 MODULES ONLINE</text>
+  <text x="600" y="484" fill="#00D9FF" font-size="11" font-family="monospace" letter-spacing="3" text-anchor="middle" opacity="0.6">AVG PROFICIENCY: 91.3%</text>
+  <text x="1140" y="484" fill="#00FF88" font-size="11" font-family="monospace" letter-spacing="3" text-anchor="end" opacity="0.6">SYSTEM: FULLY OPERATIONAL</text>
+</svg>

@@ -1,0 +1,225 @@
+/* AI OS Identity Card — Cyberpunk HUD Theme */
+
+:root {
+  --bg: #0D1117;
+  --bg-card: #0f1923;
+  --primary: #00FF88;
+  --secondary: #00D9FF;
+  --accent: #7CFC00;
+  --danger: #FF5555;
+  --warning: #FFD700;
+  --text: #E6EDF3;
+  --border: #1F6FEB;
+  --font: 'JetBrains Mono', 'IBM Plex Mono', 'Fira Code', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hud-frame {
+  width: 1200px;
+  max-width: 100%;
+  border: 1.5px solid var(--primary);
+  background: var(--bg);
+  position: relative;
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.15), inset 0 0 60px rgba(0, 255, 136, 0.03);
+}
+
+.hud-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background: rgba(0, 255, 136, 0.04);
+  border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.hud-header .label { color: var(--primary); text-shadow: 0 0 8px var(--primary); }
+.hud-header .status { color: var(--secondary); }
+
+.hud-body {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1.4fr;
+  gap: 0;
+  min-height: 380px;
+}
+
+/* Avatar section */
+.avatar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  border-right: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+.hex-frame {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: var(--bg-card);
+  border: 2px solid var(--primary);
+  overflow: hidden;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.scan-beam {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  animation: scan 3s ease-in-out infinite;
+}
+
+@keyframes scan {
+  0%   { top: 0; }
+  100% { top: 100%; }
+}
+
+.verify-badges {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+}
+
+.badge {
+  font-size: 11px;
+  letter-spacing: 2px;
+  padding: 3px 8px;
+}
+
+.badge.green  { color: var(--primary); }
+.badge.cyan   { color: var(--secondary); }
+.badge.lime   { color: var(--accent); }
+
+.status-online {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: var(--primary);
+}
+
+.pulse-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 0 8px var(--primary);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.6); opacity: 0.5; }
+}
+
+/* Identity data section */
+.identity-section {
+  padding: 28px 32px;
+  border-right: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+.section-title {
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--secondary);
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(0, 255, 136, 0.2);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table tr {
+  border-bottom: 1px solid rgba(0, 255, 136, 0.06);
+}
+
+.data-table td {
+  padding: 10px 4px;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+.data-table .key {
+  color: var(--secondary);
+  opacity: 0.65;
+  font-size: 11px;
+  letter-spacing: 2px;
+  width: 38%;
+  text-transform: uppercase;
+}
+
+.data-table .val        { color: var(--text); }
+.data-table .val.green  { color: var(--primary); }
+.data-table .val.lime   { color: var(--accent); }
+.data-table .val.gold   { color: var(--warning); }
+
+/* Skills section */
+.skills-section {
+  padding: 28px 32px;
+}
+
+.skill-bar {
+  margin-bottom: 18px;
+}
+
+.skill-bar::before {
+  content: attr(data-skill);
+  display: block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--secondary);
+  opacity: 0.8;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.skill-bar::after {
+  content: '';
+  display: block;
+  height: 7px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  width: calc(var(--pct, 0) * 1%);
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
+}

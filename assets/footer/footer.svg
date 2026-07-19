@@ -1,0 +1,78 @@
+<svg width="1200" height="160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow-g">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-c">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117"/>
+      <stop offset="100%" style="stop-color:#060a0f"/>
+    </linearGradient>
+    <linearGradient id="wave-top" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0D1117;stop-opacity:1"/>
+      <stop offset="20%" style="stop-color:#00FF88;stop-opacity:0.6"/>
+      <stop offset="50%" style="stop-color:#00D9FF;stop-opacity:0.8"/>
+      <stop offset="80%" style="stop-color:#00FF88;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#0D1117;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF88;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#00FF88;stop-opacity:0.5"/>
+      <stop offset="100%" style="stop-color:#00FF88;stop-opacity:0"/>
+    </linearGradient>
+    <!-- Matrix rain columns colors -->
+  </defs>
+
+  <rect width="1200" height="160" fill="url(#bg)"/>
+
+  <!-- Matrix rain characters (decorative columns) -->
+  <g font-family="monospace" font-size="13" opacity="0.15" fill="#00FF88">
+    <text x="40" y="30">0</text><text x="40" y="50">1</text><text x="40" y="70">1</text><text x="40" y="90">0</text>
+    <text x="80" y="20">1</text><text x="80" y="40">0</text><text x="80" y="60">1</text><text x="80" y="80">0</text><text x="80" y="100">1</text>
+    <text x="120" y="30">0</text><text x="120" y="60">1</text><text x="120" y="90">0</text>
+    <text x="1080" y="25">1</text><text x="1080" y="50">0</text><text x="1080" y="75">1</text><text x="1080" y="100">0</text>
+    <text x="1120" y="35">0</text><text x="1120" y="65">1</text><text x="1120" y="90">0</text>
+    <text x="1160" y="20">1</text><text x="1160" y="50">0</text><text x="1160" y="80">1</text><text x="1160" y="110">0</text>
+  </g>
+
+  <!-- Wave line at top -->
+  <path d="M0,30 Q150,10 300,30 Q450,50 600,30 Q750,10 900,30 Q1050,50 1200,30"
+    fill="none" stroke="url(#wave-top)" stroke-width="2">
+    <animate attributeName="d"
+      values="M0,30 Q150,10 300,30 Q450,50 600,30 Q750,10 900,30 Q1050,50 1200,30;
+              M0,30 Q150,50 300,30 Q450,10 600,30 Q750,50 900,30 Q1050,10 1200,30;
+              M0,30 Q150,10 300,30 Q450,50 600,30 Q750,10 900,30 Q1050,50 1200,30"
+      dur="4s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Scanning line -->
+  <rect x="-150" y="0" width="150" height="160" fill="url(#scan)" opacity="0.3">
+    <animate attributeName="x" values="-150;1200" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Center content -->
+  <text x="600" y="65" fill="#00FF88" font-size="14" font-family="monospace" letter-spacing="4" text-anchor="middle" filter="url(#glow-g)">AI OPERATING SYSTEM — SESSION TERMINATED</text>
+
+  <text x="600" y="92" fill="#00D9FF" font-size="12" font-family="monospace" letter-spacing="3" text-anchor="middle" opacity="0.8">NEURAL ENGINE SHUTDOWN  •  ALL PROCESSES COMPLETE</text>
+
+  <!-- Pulsing status dot -->
+  <circle cx="440" cy="115" r="5" fill="#00FF88" filter="url(#glow-g)">
+    <animate attributeName="r" values="3;6;3" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.4;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="455" y="121" fill="#00FF88" font-size="12" font-family="monospace" letter-spacing="2">CONNECTION CLOSED</text>
+
+  <!-- Divider dots -->
+  <circle cx="600" cy="118" r="2" fill="#00D9FF" opacity="0.5"/>
+
+  <!-- Right side -->
+  <text x="620" y="121" fill="#E6EDF3" font-size="12" font-family="monospace" letter-spacing="2" opacity="0.6">github.com/abhirajsingh524</text>
+
+  <!-- Bottom line -->
+  <line x1="0" y1="140" x2="1200" y2="140" stroke="#00FF88" stroke-width="1" opacity="0.3"/>
+  <text x="600" y="156" fill="#00FF88" font-size="10" font-family="monospace" letter-spacing="3" text-anchor="middle" opacity="0.4">© ARPIT SINGH — AI ENGINEER — BUILT WITH ❤ + AI</text>
+</svg>

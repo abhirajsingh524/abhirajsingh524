@@ -1,25 +1,137 @@
-root@ai-os
+<svg width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow-g">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-c">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117"/>
+      <stop offset="100%" style="stop-color:#0b0f14"/>
+    </linearGradient>
+    <linearGradient id="gr1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF88"/>
+      <stop offset="100%" style="stop-color:#00D9FF"/>
+    </linearGradient>
+    <linearGradient id="scan-h" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF88;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#00FF88;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#00FF88;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
 
-$
+  <rect width="1200" height="360" fill="url(#bg)"/>
 
-whoami
+  <!-- Subtle grid -->
+  <line x1="0" y1="90" x2="1200" y2="90" stroke="#00FF88" stroke-width="0.3" opacity="0.08"/>
+  <line x1="0" y1="180" x2="1200" y2="180" stroke="#00FF88" stroke-width="0.3" opacity="0.08"/>
+  <line x1="0" y1="270" x2="1200" y2="270" stroke="#00FF88" stroke-width="0.3" opacity="0.08"/>
+  <line x1="400" y1="0" x2="400" y2="360" stroke="#00FF88" stroke-width="0.3" opacity="0.06"/>
+  <line x1="800" y1="0" x2="800" y2="360" stroke="#00FF88" stroke-width="0.3" opacity="0.06"/>
 
-Arpit Singh
+  <!-- Outer border with glow -->
+  <rect x="1" y="1" width="1198" height="358" fill="none" stroke="#00FF88" stroke-width="1.5" opacity="0.4" filter="url(#glow-g)"/>
 
-$
+  <!-- Top title bar (like terminal chrome) -->
+  <rect x="0" y="0" width="1200" height="48" fill="#00FF88" opacity="0.06"/>
+  <rect x="0" y="48" width="1200" height="2" fill="url(#gr1)" opacity="0.6"/>
 
-status
+  <!-- Window controls (macOS style dots) -->
+  <circle cx="38" cy="24" r="7" fill="#FF5555" opacity="0.8"/>
+  <circle cx="62" cy="24" r="7" fill="#FFD700" opacity="0.8"/>
+  <circle cx="86" cy="24" r="7" fill="#00FF88" opacity="0.8"/>
 
-ONLINE
+  <!-- Terminal title -->
+  <text x="600" y="30" fill="#00FF88" font-size="12" font-family="monospace" letter-spacing="4" text-anchor="middle" filter="url(#glow-g)">ARPIT-AI-OS — SECURE TERMINAL v4.0</text>
 
-$
+  <!-- Scan line -->
+  <rect x="0" y="50" width="80" height="1" fill="url(#scan-h)">
+    <animate attributeName="x" values="-80;1200" dur="3s" repeatCount="indefinite"/>
+  </rect>
 
-launch ai-core
+  <!-- Terminal content area -->
+  <rect x="20" y="58" width="1160" height="280" rx="2" fill="#06090d" opacity="0.6"/>
 
-SUCCESS
+  <!-- Terminal lines -->
+  <g font-family="monospace" font-size="15">
 
-$
+    <!-- Prompt line 1 -->
+    <text x="40" y="94" fill="#00FF88" opacity="0" filter="url(#glow-g)">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.3s" fill="freeze"/>
+      root@arpit-ai-os:~$
+    </text>
+    <text x="270" y="94" fill="#E6EDF3" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.6s" fill="freeze"/>
+      whoami
+    </text>
+    <text x="40" y="118" fill="#00D9FF" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="0.9s" fill="freeze"/>
+      →  Arpit Singh  |  Artificial Intelligence Engineer
+    </text>
 
-monitor system
+    <!-- Prompt line 2 -->
+    <text x="40" y="148" fill="#00FF88" opacity="0" filter="url(#glow-g)">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="1.2s" fill="freeze"/>
+      root@arpit-ai-os:~$
+    </text>
+    <text x="270" y="148" fill="#E6EDF3" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="1.5s" fill="freeze"/>
+      status --check
+    </text>
+    <text x="40" y="172" fill="#00FF88" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="1.8s" fill="freeze"/>
+      →  ONLINE  ◉  AVAILABLE FOR AI COLLABORATION  ◉  OPEN TO OPPORTUNITIES
+    </text>
 
-RUNNING
+    <!-- Prompt line 3 -->
+    <text x="40" y="202" fill="#00FF88" opacity="0" filter="url(#glow-g)">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="2.1s" fill="freeze"/>
+      root@arpit-ai-os:~$
+    </text>
+    <text x="270" y="202" fill="#E6EDF3" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="2.4s" fill="freeze"/>
+      ./launch --ai-core
+    </text>
+    <text x="40" y="226" fill="#7CFC00" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="2.7s" fill="freeze"/>
+      →  SUCCESS  ✓  Neural Engine Engaged  |  All Modules Initialized
+    </text>
+
+    <!-- Prompt line 4 -->
+    <text x="40" y="256" fill="#00FF88" opacity="0" filter="url(#glow-g)">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="3.0s" fill="freeze"/>
+      root@arpit-ai-os:~$
+    </text>
+    <text x="270" y="256" fill="#E6EDF3" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="3.3s" fill="freeze"/>
+      contact --info
+    </text>
+    <text x="40" y="280" fill="#00D9FF" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="3.6s" fill="freeze"/>
+      →  anoop005240@gmail.com  |  github.com/abhirajsingh524
+    </text>
+
+    <!-- Active prompt with cursor -->
+    <text x="40" y="315" fill="#00FF88" opacity="0" filter="url(#glow-g)">
+      <animate attributeName="opacity" values="0;1" dur="0.1s" begin="3.8s" fill="freeze"/>
+      root@arpit-ai-os:~$
+    </text>
+    <!-- Blinking cursor -->
+    <rect x="270" y="299" width="11" height="19" fill="#00FF88" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;0;1;0;1" dur="1s" begin="3.9s" repeatCount="indefinite"/>
+    </rect>
+
+  </g>
+
+  <!-- Bottom status bar -->
+  <rect x="0" y="338" width="1200" height="22" fill="#00FF88" opacity="0.05"/>
+  <line x1="0" y1="338" x2="1200" y2="338" stroke="#00FF88" stroke-width="1" opacity="0.3"/>
+  <text x="40" y="354" fill="#00FF88" font-size="10" font-family="monospace" letter-spacing="2" opacity="0.6">CONN: SECURE</text>
+  <text x="200" y="354" fill="#00D9FF" font-size="10" font-family="monospace" letter-spacing="2" opacity="0.6">ENC: AES-256</text>
+  <text x="600" y="354" fill="#E6EDF3" font-size="10" font-family="monospace" letter-spacing="2" text-anchor="middle" opacity="0.5">AI-OS TERMINAL — SESSION ACTIVE</text>
+  <text x="1000" y="354" fill="#00FF88" font-size="10" font-family="monospace" letter-spacing="2" opacity="0.6">PID: 4524</text>
+  <text x="1160" y="354" fill="#7CFC00" font-size="10" font-family="monospace" letter-spacing="2" text-anchor="end" opacity="0.6">◉ RUNNING</text>
+</svg>

@@ -1,21 +1,94 @@
-GITHUB TELEMETRY
+<svg width="1200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow-g">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-c">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0D1117"/>
+      <stop offset="100%" style="stop-color:#0b0f14"/>
+    </linearGradient>
+    <linearGradient id="gr1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF88"/>
+      <stop offset="100%" style="stop-color:#00D9FF"/>
+    </linearGradient>
+    <linearGradient id="scan-h" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00FF88;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#00FF88;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#00FF88;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
 
-COMMITS
+  <rect width="1200" height="200" fill="url(#bg)"/>
 
-██████████████
+  <!-- Grid -->
+  <line x1="240" y1="0" x2="240" y2="200" stroke="#00FF88" stroke-width="0.3" opacity="0.1"/>
+  <line x1="480" y1="0" x2="480" y2="200" stroke="#00FF88" stroke-width="0.3" opacity="0.1"/>
+  <line x1="720" y1="0" x2="720" y2="200" stroke="#00FF88" stroke-width="0.3" opacity="0.1"/>
+  <line x1="960" y1="0" x2="960" y2="200" stroke="#00FF88" stroke-width="0.3" opacity="0.1"/>
+  <line x1="0" y1="100" x2="1200" y2="100" stroke="#00FF88" stroke-width="0.3" opacity="0.1"/>
 
-REPOSITORIES
+  <!-- Border -->
+  <rect x="1" y="1" width="1198" height="198" fill="none" stroke="#00FF88" stroke-width="1.5" opacity="0.35"/>
 
-██████████
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="44" fill="#00FF88" opacity="0.04"/>
+  <text x="60" y="28" fill="#00FF88" font-size="11" font-family="monospace" letter-spacing="5" filter="url(#glow-g)">[ GITHUB INTELLIGENCE — TELEMETRY DASHBOARD ]</text>
+  <text x="1140" y="28" fill="#00D9FF" font-size="11" font-family="monospace" letter-spacing="2" text-anchor="end" opacity="0.8">SYNC: LIVE</text>
+  <!-- Scan line -->
+  <rect x="0" y="44" width="80" height="2" fill="url(#scan-h)">
+    <animate attributeName="x" values="-80;1200" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
 
-STREAK
+  <!-- 5 telemetry stat boxes -->
 
-████████████
+  <!-- COMMITS -->
+  <rect x="40" y="60" width="196" height="120" rx="4" fill="#0f1923" stroke="#00FF88" stroke-width="1" opacity="0.8"/>
+  <text x="138" y="90" fill="#00D9FF" font-size="11" font-family="monospace" letter-spacing="2" text-anchor="middle" opacity="0.7">COMMITS</text>
+  <text x="138" y="128" fill="#00FF88" font-size="36" font-family="monospace" font-weight="bold" text-anchor="middle" filter="url(#glow-g)">500+</text>
+  <rect x="60" y="148" width="156" height="4" rx="1" fill="#0f1318"/>
+  <rect x="60" y="148" width="0" height="4" rx="1" fill="url(#gr1)">
+    <animate attributeName="width" values="0;156" dur="2s" begin="0.2s" fill="freeze"/>
+  </rect>
 
-CONTRIBUTIONS
+  <!-- REPOSITORIES -->
+  <rect x="256" y="60" width="196" height="120" rx="4" fill="#0f1923" stroke="#00D9FF" stroke-width="1" opacity="0.8"/>
+  <text x="354" y="90" fill="#00D9FF" font-size="11" font-family="monospace" letter-spacing="2" text-anchor="middle" opacity="0.7">REPOS</text>
+  <text x="354" y="128" fill="#00D9FF" font-size="36" font-family="monospace" font-weight="bold" text-anchor="middle" filter="url(#glow-c)">20+</text>
+  <rect x="276" y="148" width="156" height="4" rx="1" fill="#0f1318"/>
+  <rect x="276" y="148" width="0" height="4" rx="1" fill="url(#gr1)">
+    <animate attributeName="width" values="0;120" dur="2s" begin="0.4s" fill="freeze"/>
+  </rect>
 
-███████████
+  <!-- STREAK -->
+  <rect x="472" y="60" width="256" height="120" rx="4" fill="#0f1923" stroke="#00FF88" stroke-width="1.5" opacity="0.9"/>
+  <rect x="472" y="60" width="256" height="4" rx="2" fill="url(#gr1)"/>
+  <text x="600" y="90" fill="#00D9FF" font-size="11" font-family="monospace" letter-spacing="2" text-anchor="middle" opacity="0.7">CONTRIBUTION STREAK</text>
+  <text x="600" y="130" fill="#FFD700" font-size="32" font-family="monospace" font-weight="bold" text-anchor="middle">ACTIVE</text>
+  <circle cx="600" cy="148" r="6" fill="#00FF88" filter="url(#glow-g)">
+    <animate attributeName="r" values="4;8;4" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
 
-LANGUAGES
+  <!-- STARS -->
+  <rect x="748" y="60" width="196" height="120" rx="4" fill="#0f1923" stroke="#FFD700" stroke-width="1" opacity="0.8"/>
+  <text x="846" y="90" fill="#00D9FF" font-size="11" font-family="monospace" letter-spacing="2" text-anchor="middle" opacity="0.7">STARS</text>
+  <text x="846" y="128" fill="#FFD700" font-size="36" font-family="monospace" font-weight="bold" text-anchor="middle">⭐</text>
+  <rect x="768" y="148" width="156" height="4" rx="1" fill="#0f1318"/>
+  <rect x="768" y="148" width="0" height="4" rx="1" fill="url(#gr1)">
+    <animate attributeName="width" values="0;100" dur="2s" begin="0.6s" fill="freeze"/>
+  </rect>
 
-████████████
+  <!-- PROFILE VIEWS -->
+  <rect x="964" y="60" width="196" height="120" rx="4" fill="#0f1923" stroke="#7CFC00" stroke-width="1" opacity="0.8"/>
+  <text x="1062" y="90" fill="#00D9FF" font-size="11" font-family="monospace" letter-spacing="2" text-anchor="middle" opacity="0.7">PROFILE VIEWS</text>
+  <text x="1062" y="128" fill="#7CFC00" font-size="28" font-family="monospace" font-weight="bold" text-anchor="middle" filter="url(#glow-g)">GROWING</text>
+  <rect x="984" y="148" width="156" height="4" rx="1" fill="#0f1318"/>
+  <rect x="984" y="148" width="0" height="4" rx="1" fill="url(#gr1)">
+    <animate attributeName="width" values="0;140" dur="2s" begin="0.8s" fill="freeze"/>
+  </rect>
+</svg>

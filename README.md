@@ -34,14 +34,22 @@
 
 </p>
 
-<!-- Identity Module -->
-
 <!-- ========================================================= -->
-<!--                 AI IDENTITY SCANNER                       -->
+<!--                 AI IDENTITY HUD                           -->
 <!-- ========================================================= -->
 
 <p align="center">
-  <img src="./assets/divider/circuit.svg" width="100%">
+
+<img src="./assets/hud/identity.svg" width="100%">
+
+</p>
+
+---
+
+<p align="center">
+
+<img src="./assets/divider/circuit.svg" width="100%">
+
 </p>
 
 <h1 align="center">
@@ -128,16 +136,18 @@ STATUS      : AVAILABLE FOR AI COLLABORATION
   <img src="./assets/divider/circuit.svg" width="100%">
 </p>
 
+<p align="center">
+
+<img src="./assets/hud/dashboard.svg" width="100%">
+
+</p>
+
 ---
 
-<!-- Dashboard Module -->
-
-<!-- ========================================================= -->
-<!--                NEURAL CORE DASHBOARD                      -->
-<!-- ========================================================= -->
-
 <p align="center">
+
 <img src="./assets/divider/circuit.svg" width="100%">
+
 </p>
 
 <h1 align="center">🧠 NEURAL CORE DASHBOARD</h1>
@@ -265,15 +275,18 @@ Data Analytics       █████████████████
 
 
 ---
+<p align="center">
 
-<!-- Projects -->
+<img src="./assets/hud/projects.svg" width="100%">
 
-<!-- ========================================================= -->
-<!--                  MISSION DATABASE                          -->
-<!-- ========================================================= -->
+</p>
+
+---
 
 <p align="center">
+
 <img src="./assets/divider/circuit.svg" width="100%">
+
 </p>
 
 <!-- ========================================================= -->
@@ -448,7 +461,28 @@ Predict disasters before they happen using AI and real-time analytics.
 
 ---
 
-# 📡 GITHUB INTELLIGENCE CENTER
+<p align="center">
+
+<img src="./assets/hud/telemetry.svg" width="100%">
+
+</p>
+
+<p align="center">
+
+<img height="180"
+src="https://github-readme-stats.vercel.app/api?username=abhirajsingh524&theme=chartreuse-dark&show_icons=true&hide_border=true"/>
+
+<img height="180"
+src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhirajsingh524&theme=chartreuse-dark&layout=compact&hide_border=true"/>
+
+</p>
+
+<p align="center">
+
+<img width="100%"
+src="https://github-readme-activity-graph.vercel.app/graph?username=abhirajsingh524&theme=react-dark&hide_border=true"/>
+
+</p>
 
 ```text
 Connecting to GitHub API...
@@ -484,7 +518,11 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=abhirajsingh
 
 <!-- Contact -->
 
-# 💻 TERMINAL
+<p align="center">
+
+<img src="./assets/hud/terminal.svg" width="100%">
+
+</p>
 
 ```bash
 root@ai-os:~$
